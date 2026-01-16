@@ -1,0 +1,62 @@
+/* Navigation Styles */
+
+/* Override only the logo bullet color (keeps global Tailwind accent-red unchanged) */
+.nav-logo .text-accent-red {
+  color: rgba(173, 1, 1, 1);
+}
+
+/* Desktop navigation link hover effect */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #DC2626;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active navigation link */
+.nav-link-active {
+  position: relative;
+}
+
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #DC2626;
+}
+
+/* Mobile navigation active link */
+.mobile-nav-link-active {
+  position: relative;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #DC2626;
+}
+
+/* Fade-in animation for mobile menu */
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
