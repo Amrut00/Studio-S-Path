@@ -278,42 +278,42 @@ const Projects = () => {
                   {/* Project Number (index reference) */}
                   <div className="mb-4 md:mb-0 md:w-20 shrink-0">
                     <span className="text-xs md:text-sm font-light text-accent-red tracking-[0.25em]">
-                      {project.number}
-                    </span>
-                  </div>
+                    {project.number}
+                  </span>
+                </div>
 
                   {/* Project Content */}
                   <div className="flex-1">
-                    {/* Project Title */}
+                {/* Project Title */}
                     <div className="mb-4 2xl:mb-6 3xl:mb-8 4xl:mb-10">
                       <h2 className="text-4xl md:text-5xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl 4xl:text-9xl font-light text-gray-900 tracking-tight relative inline-block">
-                        {project.title}
+                    {project.title}
                         <span className="absolute bottom-0 left-0 w-0 h-px bg-gray-900 transition-all duration-300 ease-in-out group-hover:w-full"></span>
-                      </h2>
-                    </div>
+                  </h2>
+                </div>
 
-                    {/* Meta Line */}
+                {/* Meta Line */}
                     <div className="mb-8 2xl:mb-10 3xl:mb-12 4xl:mb-16">
                       <p className="text-sm 2xl:text-base 3xl:text-lg 4xl:text-xl font-light text-gray-500 tracking-wide">
-                        {project.location} · {project.year} · {project.typology}
-                      </p>
-                    </div>
+                    {project.location} · {project.year} · {project.typology}
+                  </p>
+                </div>
 
-                    {/* Project Image */}
+                {/* Project Image */}
                     <div className="mb-8 2xl:mb-10 3xl:mb-12 4xl:mb-16 w-full h-[42vh] md:h-[46vh] lg:h-[50vh] 2xl:h-[55vh] 3xl:h-[60vh] 4xl:h-[65vh] bg-white overflow-hidden">
-                      <img
+                  <img
                         ref={(el) => (projectImageRefs.current[index] = el)}
-                        src={project.image}
-                        alt={project.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                    {/* Concept Line */}
+                {/* Concept Line */}
                     <div className="max-w-2xl 2xl:max-w-3xl 3xl:max-w-4xl 4xl:max-w-5xl">
                       <p className="text-base md:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-light text-gray-700 leading-relaxed">
-                        {project.concept}
-                      </p>
+                    {project.concept}
+                  </p>
                     </div>
                   </div>
                 </div>

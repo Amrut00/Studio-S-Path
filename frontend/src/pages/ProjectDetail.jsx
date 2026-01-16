@@ -246,8 +246,8 @@ const ProjectDetail = () => {
           {/* Left: Project Title */}
           <div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl 3xl:text-9xl 4xl:text-[10rem] font-light text-gray-900 tracking-tight">
-              {project.title}
-            </h1>
+          {project.title}
+        </h1>
           </div>
           
           {/* Right: Project Facts */}
